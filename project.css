@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: "Poppins", serif;
+}
+
+/* .main_box {
+    background-color: white;
+    height: 100vh;
+    background-size: cover;
+} */
+
+.btn_one i {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    position: fixed;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer; 
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -300px;     
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(247, 251, 252); /*#f7fbfc*/
+    /* box-shadow: 0 0 6px rgba(255,255,255,0.5); */
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.5);
+    height: 60px;
+}
+
+.sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sidebar_menu .btn_two i{
+    color: black;
+    font-size: 20px;
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li {
+    margin-top: 6px;
+    padding: 10px 20px;
+    
+}
+
+.sidebar_menu .menu i,a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i {
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media {
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i {
+    color: black;
+    opacity: 0.5;
+    padding: 0 5px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    /* transform: scale(1.1); */
+}
+
+#check {
+    display: none;
+}
+
+.btn_one i:hover {
+    font-size: 40px;
+}
+
+.btn_two i:hover {
+    font-size: 30px;
+}
+
+#check:checked ~ .sidebar_menu {
+    left: 0;
+}
+
+#check:checked ~ .btn_one i {
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i {
+    opacity: 1;
+}
+
+/* writing the css of main content*/
+
+.sticky-nav {
+    margin-left: 300px;
+}
+
+.upgrade {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;   
+}
+
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.sticky-nav-options div {
+    margin: 0.8rem;
+}
+
+/* @media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+} */
+
+.sticky-nav1 {
+    margin-left: 300px;
+    position: sticky;
+    top: 0rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.one {
+    text-decoration: underline;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.heading div {
+    margin: 1rem;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.date div {
+    margin: 0.6rem;
+}
+
+
+/* CSS for Cards */
+
+.cards-container {
+    margin-left: 300px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 24px 16px 24px;
+    flex-wrap: wrap;
+}
+
+.cards-container div {
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f6f8fa;
+    padding: 24px;
+}
+.cards-container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.card1 {
+    background-color: rgb(219, 236, 235);
+    width: 300px;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.complete {
+    margin-right: 5rem;
+}
+
+.card2 {
+    background-color: yellow;
+    width: 300px;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.customer {
+    margin-right: 7rem;
+}
+.card3 {
+    background-color: rgba(147, 86, 217, 0.814);
+    width: 300px;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.card3 button p {
+    color: black;
+    display: inline-block;
+    background-color: white;
+}
+
+.average {
+    height: 50px;
+}
+
+.badge {
+    height: 25px;
+    border: none;
+    border-radius: 0.2rem;
+    padding-bottom: 10px;
+    width: fit-content;
+    background-color: white;
+    font-weight: 700;
+    margin-top: 2px;
+    margin-left: 100px;
+}
+
+.down-para {
+    margin-top: 80px;
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+/*CSS for big cards two middle cards*/
+
+.card-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-left: 320px; /* Pushes content away from sidebar */
+    margin-right: 24px;
+    margin-top: 20px;
+}
+
+.performance {
+    background-color: white;
+    width: calc(50% - 8px); 
+    height: 200px;
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.budget {
+    background-color: white;
+    width: calc(50% - 8px);  
+    height: 200px;
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* Card container */
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    flex: 1 1 45%;
+    min-width: 300px;
+    font-family: 'Segoe UI', sans-serif;
+}
+  
+/* Header inside card */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.card-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+  
+/* Buttons */
+.team-toggle,
+.refresh {
+    background: #f2f2f2;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+  
+  /* Performance Chart */
+.bar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+    height: 150px;
+}
+  
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+  
+.bar .fill {
+    width: 40px;
+    background-color: #f7b8f7;
+    border-radius: 10px 10px 0 0;
+}
+  
+/* Budget styles */
+.budget h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+  
+.budget-bars {
+    display: flex;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+  
+.bar-block {
+    height: 100%;
+}
+  
+.used {
+    background-color: #c9b3f5;   
+}
+  
+.reserved {
+    background-color: #d7e3ff;
+}
+
+.unused {
+    background-color: #000;
+}
+  
+.labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #888;
+}
+  
+
+/*CSS for cards at the bottom two big cards*/
+.card-row-new {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 320px;
+    margin-right: 24px;
+    margin-top: 20px;
+    flex-wrap: nowrap; /* prevent wrapping */
+    gap: 16px;
+}
+
+.performance1 {
+    background-color: white;
+    width: calc(50% - 8px); /* half width minus half the gap */
+    height: 200px;
+    padding: 1.5rem;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.budget1 {
+    background-color: white;
+    width: calc(50% - 8px); /* half width minus half the gap */
+    height: 200px;
+    padding: 1.5rem;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.performance1 img {
+    height: 248px;
+    width: 400px;
+}
+
+.budget1 img {
+    height: 248px;
+    width: 400px;
+}
